@@ -14,54 +14,58 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app Final</title>
   </head>
-  <div class="container">
-    <div class="app-wrapper">
-      <h1>City</h1>
-      <div class="row">
-        <div class="col-6">
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="app-wrapper">
+          <div class="overview"></div>
+          <h1>City</h1>
+
           <ul>
             <li>Monday 21:04</li>
             <li>Clear Sky</li>
-            <li>
-              12°C |°F
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-app">
+                <img
+                  class="float-left"
+                  alt="Snow showers"
+                  src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+                  id="wob_tci"
+                  data-atf="1"
+                />
+                <div class="float-left">12°C |°F</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity</li>
+                <li>Wind</li>
+              </ul>
+            
+          </div>
 
-              <img
-                class="wob_tci"
-                alt="Snow showers"
-                src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
-                id="wob_tci"
-                data-atf="1"
-              />
-            </li>
-          </ul>
+          <small>
+            Open source on
+            <a
+              href="https://github.com/Silvia-Penti/vanilla-weather-app"
+              target="_blank"
+            >
+              GitHub</a
+            >
+            by
+            <a
+              href="https://www.linkedin.com/in/silvia-pentia-25198a97/"
+              target="_blank"
+            >
+              Silvia Pentia</a
+            >
+          </small>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity</li>
-            <li>Wind</li>
-          </ul>
-        </div>
-        <small>
-          Open source on
-          <a
-            href="https://github.com/Silvia-Penti/vanilla-weather-app"
-            target="_blank"
-          >
-            GitHub</a
-          >
-          by
-          <a
-            href="https://www.linkedin.com/in/silvia-pentia-25198a97/"
-            target="_blank"
-          >
-            Silvia Pentia</a
-          >
-        </small>
       </div>
     </div>
-  </div>
 
-  <body>
     <script src="src/app.js"></script>
   </body>
 </html>
