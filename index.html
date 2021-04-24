@@ -14,32 +14,38 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app Final</title>
   </head>
-  <div class="container">
-    <div class="app-wrapper">
-      <h1>City</h1>
-      <div class="row">
-        <div class="col-6">
-          <ul>
-            <li>Monday 21:04</li>
-            <li>Clear Sky</li>
-            <li>
-              12°C |°F
-
-              <img
-                class="wob_tci"
-                alt="Snow showers"
-                src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
-                id="wob_tci"
-                data-atf="1"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity</li>
-            <li>Wind</li>
-          </ul>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="app-wrapper">
+          <div class="overview">
+            <h1>City</h1>
+            <ul>
+              <li>Monday 21:04</li>
+              <li>Clear Sky</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  class="float-left"
+                  alt="Snow showers"
+                  src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
+                />
+                <span class="float-left"
+                  ><strong>12</strong
+                  ><small>°C |<a href="#">°F</a></small></span
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity</li>
+                <li>Wind</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <small>
           Open source on
@@ -59,9 +65,7 @@
         </small>
       </div>
     </div>
-  </div>
 
-  <body>
     <script src="src/app.js"></script>
   </body>
 </html>
