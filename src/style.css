@@ -43,6 +43,7 @@ li:first-letter {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  position: relative;
 }
 .weather-temperature small {
   position: relative;
@@ -52,9 +53,7 @@ li:first-letter {
 .weather-temperature a {
   text-decoration: none;
 }
-.weather-temperature img {
-  margin-right: 5px;
-}
+
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
