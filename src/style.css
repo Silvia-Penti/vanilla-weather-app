@@ -1,10 +1,12 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 24px;
+  color: black;
 }
 
 h1 {
-  color: grey;
-  font-size: 25px;
+  color: black;
+  font-size: 24px;
   font-weight: 100;
   line-height: 29px;
   margin-bottom: 0;
@@ -17,7 +19,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color: black;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -31,9 +33,10 @@ li:first-letter {
   margin: 30px auto;
 }
 .app-wrapper {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   padding: 20px;
   border: 1px solid rebeccapurple;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .overview {
   margin-bottom: 20px;
@@ -43,7 +46,6 @@ li:first-letter {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
-  position: relative;
 }
 .weather-temperature small {
   position: relative;
