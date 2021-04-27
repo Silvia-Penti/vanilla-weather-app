@@ -63,3 +63,13 @@ li:first-letter {
 .weather-temperature.active:hover {
   text-decoration: none;
 }
+#weekday {
+  font-size: 17px;
+  text-align: center;
+}
+.min-max {
+  font-size: 14px;
+}
+#max {
+  opacity: 0.7;
+}
