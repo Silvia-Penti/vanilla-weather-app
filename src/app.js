@@ -20,24 +20,36 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
+
+  function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+  }
 }
-function displayForecast() {
+function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Wed", "Thu", "Frid", "Sat", "Sun", "Mon"];
   let forecastHTML = `<div class="row" >`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
-      ` <div class="col-2" id="weekday">
-                ${day}
+      ` <div class="col-2" id="weekday">${formatDay(forecastDay.dt)}
+                
                 
                 <img
-                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  src="http://openweathermap.org/img/wn/${
+                    forecastDay.weather[0].icon
+                  }@2x.png"
+          alt=""
+          width="42"
                 />
 
                 <div class="min-max">
-                  <span id="min">12° </span>
-                  <span id="max">16° </span>
+                  <span id="min"> ${Math.round(forecastDay.temp.max)} ° </span>
+                  <span id="max"> ${Math.round(forecastDay.temp.min)} ° </span>
                 </div>
               </div>
               `;
