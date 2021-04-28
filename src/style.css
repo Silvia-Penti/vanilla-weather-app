@@ -85,3 +85,10 @@ li:first-letter {
 .next-days img {
   border-radius: 3px;
 }
+
+@media (max-width: 550px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
