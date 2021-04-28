@@ -64,11 +64,11 @@ li:first-letter {
   text-decoration: none;
 }
 #weekday {
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
 }
 .min-max {
-  font-size: 14px;
+  font-size: 13px;
 }
 #max {
   opacity: 0.7;
