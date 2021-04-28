@@ -29,7 +29,7 @@ li:first-letter {
 }
 
 .weather-app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
 }
 .app-wrapper {
@@ -64,15 +64,24 @@ li:first-letter {
   text-decoration: none;
 }
 #weekday {
-  font-size: 15px;
+  margin-top: 20px;
+  font-size: 20px;
   text-align: center;
 }
 .min-max {
-  font-size: 13px;
+  font-size: 20px;
+  text-align: center;
 }
 #max {
   opacity: 0.7;
 }
 .credit {
   font-size: 18px;
+}
+.next-days {
+  text-align: center;
+  font-size: larger;
+}
+.next-days img {
+  border-radius: 3px;
 }
