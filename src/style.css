@@ -94,7 +94,7 @@ li:first-letter {
   }
 }
 
-@keyframes example {
+@keyframes sunrise {
   0% {
     opacity: 0;
   }
@@ -106,8 +106,27 @@ li:first-letter {
 
 /* The element to apply the animation to */
 .sun {
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
+  animation-name: sunrise;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+@keyframes sunset {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* The element to apply the animation to */
+.moon {
+  animation-name: sunset;
+
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
