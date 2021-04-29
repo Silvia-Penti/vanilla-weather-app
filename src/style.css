@@ -63,6 +63,7 @@ li:first-letter {
 .weather-temperature.active:hover {
   text-decoration: none;
 }
+
 #weekday {
   margin-top: 20px;
   font-size: 20px;
@@ -91,4 +92,22 @@ li:first-letter {
   [class*="col-"] {
     width: 100%;
   }
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* The element to apply the animation to */
+.sun {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
