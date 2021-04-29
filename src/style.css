@@ -1,15 +1,19 @@
 body {
   font-family: "Yantramanav", sans-serif;
   font-size: 24px;
-  color: black;
+  color: #1e212d;
+  font-weight: bold;
+  background-image: url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/174537852_163579022241749_7078320505922661292_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=mlaG45R_MDAAX-LrbCH&_nc_ht=scontent-arn2-1.xx&oh=edd6e03b019378dad56084f1e97274df&oe=60B0BC3D");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  color: black;
-  font-size: 24px;
-  font-weight: 100;
+  margin-top: 10px;
+  font-size: 30px;
   line-height: 29px;
   margin-bottom: 0;
+  font-weight: bold;
 }
 ul {
   margin: 0;
@@ -19,33 +23,46 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: black;
+
   font-size: 16px;
-  font-weight: 100;
+
   line-height: 19px;
 }
 li:first-letter {
   text-transform: capitalize;
 }
+.credit {
+  font-size: 14px;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  background-color: #393e46;
+  color: white;
+  border-radius: 4px;
+}
+#sky,
+.update {
+  margin-top: 5px;
+}
 
 .weather-app {
   max-width: 700px;
   margin: 30px auto;
+  margin-top: 100px;
 }
 .app-wrapper {
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  opacity: 0.8;
   padding: 20px;
   border: 1px solid rebeccapurple;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 .overview {
   margin-bottom: 20px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
-  font-weight: 400;
 }
 .weather-temperature small {
   position: relative;
@@ -57,7 +74,6 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
   cursor: default;
 }
 .weather-temperature.active:hover {
@@ -76,9 +92,7 @@ li:first-letter {
 #max {
   opacity: 0.7;
 }
-.credit {
-  font-size: 18px;
-}
+
 .next-days {
   text-align: center;
   font-size: larger;
@@ -98,16 +112,24 @@ li:first-letter {
   0% {
     opacity: 0;
   }
-
-  100% {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
     opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
 /* The element to apply the animation to */
 .sun {
   animation-name: sunrise;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -116,17 +138,25 @@ li:first-letter {
   0% {
     opacity: 1;
   }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
 
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 /* The element to apply the animation to */
 .moon {
   animation-name: sunset;
-
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
 }
